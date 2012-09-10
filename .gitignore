@@ -1,0 +1,12 @@
+.dropbox
+examples/
+.*.swp
+pp
+lex.*
+y.*
+output
+new_copy
+parser
+*.exe
+*.lib
+*.o
