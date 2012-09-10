@@ -1,0 +1,24 @@
+program astalavista ;
+var x , y  : integer ;
+var z : boolean ;
+procedure manhasitall ( k : integer );
+        begin
+		x := k div y
+        end ;
+function paredromo ( m : boolean ) : integer ;
+        begin
+                if ( not m )
+                then  x := 0
+                else
+                begin
+                        manhasitall ( 2 ) ;
+                        y := y + 3
+                end
+        end ;
+begin
+        z := TRUE ;
+        y := 0 ;
+        while y > 10 do paredromo(z)
+end
+.
+
