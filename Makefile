@@ -9,7 +9,7 @@ all: lex.yy.c y.tab.c
 lex.yy.c: buzen.l
 	flex buzen.l
 y.tab.c: buzen.y
-	bison -y -d buzen.y
+	bison -ydv buzen.y
 clean:
 	rm parser lex.* y.* output pp new_copy
 test:

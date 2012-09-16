@@ -46,7 +46,7 @@ f_wrap:                 QM formal_parameter  f_wrap
 
 formal_parameter:       ID id_wrap COLON DATA_TYPES ;
 
-statement:            | assignment
+statement:             assignment
                       | if_statement
                       | while_statement
                       | proc_func_call
@@ -84,7 +84,7 @@ expression:             UOP expression wrapper
                       | INT wrapper
                       | ID wrapper ;
 
-wrapper:                BOP wrapper expression
+wrapper:                BOP expression wrapper
                       | ;
 
 %%
