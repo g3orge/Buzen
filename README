@@ -7,7 +7,7 @@ George Papanikolaou
 Prokopis Gryllos
 
 RUN:
-using GNU make, run `make` to build it and `make tests`
+using GNU make, run `make` to build it and `make test` to run tests
 
 Dependencies:
 bison (GNU Bison) 2.5

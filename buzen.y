@@ -46,7 +46,7 @@ f_wrap:                 QM formal_parameter  f_wrap
 
 formal_parameter:       ID id_wrap COLON DATA_TYPES ;
 
-statement:             assignment
+statement:              assignment
                       | if_statement
                       | while_statement
                       | proc_func_call
@@ -57,13 +57,17 @@ assignment:             ID COLON EQUAL expression ;
 
 if_statement:           IF  a ;
 
-a:                      expression THEN statement 
-                      | expression THEN statement  ELSE statement ;
+a:                      expression THEN statement d; 
+
+d:                      ELSE statement
+                      | ;
 
 while_statement:        WHILE expression DO statement ;
 
-proc_func_call:         ID 
-                      | ID LPAR actual_parameters RPAR ;
+proc_func_call:         ID c;
+
+c:                      LPAR actual_parameters RPAR 
+                      | ;
 
 actual_parameters:      expression expr_wrap ;
 
@@ -82,7 +86,8 @@ expression:             UOP expression wrapper
                       | proc_func_call wrapper
                       | LPAR expression RPAR wrapper
                       | INT wrapper
-                      | ID wrapper ;
+                    
+                      
 
 wrapper:                BOP expression wrapper
                       | ;
@@ -101,5 +106,5 @@ int main ( int argc, char **argv  ) {
   yyout = fopen ("output", "w");	
   yyparse ();	    
   return 0;
-  } 					
+} 					
 
