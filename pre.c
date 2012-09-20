@@ -22,7 +22,7 @@ int main (int argc, char **argv) {
 
     int counter = 0;
     char *source_name = argv[1];    // Names of the files
-    char *final_name  ="new_copy";
+    char *final_name  = "wo_comm";
     int ch;                         // Character to test.
     bool in_comment = false;        // Boolean flag ( defaults to false )
     /*  Assigning streams of the files  */

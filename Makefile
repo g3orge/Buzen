@@ -11,11 +11,8 @@ lex.yy.c: buzen.l
 y.tab.c: buzen.y
 	bison -ydv buzen.y
 clean:
-	rm parser lex.* y.* output pp new_copy
+	rm parser lex.* y.* output pp wo_comm 2>/dev/null
 test:
-	# ----- (1) Small test -----
-	./parser tests/small.buz
-	# ----- (2) BIG test -------
-	./parser tests/big.buz
-	# - Preproccessor testing --
-	./pp tests/with_comments
+	# Running a sample program through the preprocessor and the actual parser
+	./pp tests/big.buz
+	./parser wo_comm
