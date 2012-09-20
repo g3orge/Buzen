@@ -1,25 +1,25 @@
 /* Test program for the Buzen language */
-program astalavista ;
+program TheProgram1 ;
 var x , y  : integer ;
 var z : boolean ;
-procedure manhasitall ( k : integer );
+procedure TheFirstFunction ( k : integer );
         /* Returns the 'div' of a given integer number */
         begin
 		x := k div y
         end ;
-function paredromo ( m : boolean ) : integer ;
+function TheSecondFunction ( m : boolean ) : integer ;
         begin
-                if ( not m )
+                if ( not m )    /* If condition with else */
                 then  x := 0
                 else
                 begin
-                        manhasitall ( 2 ) ;
+                        TheFirstFunction ( 2 ) ;
                         y := y + 3
                 end
         end ;
 begin
         z := TRUE ;
         y := 0 ;
-        while y > 10 do paredromo(z)
+        while y > 10 do TheSecondFunction(z) /* while without parethesis */
 end
 .
