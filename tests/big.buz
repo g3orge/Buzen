@@ -1,7 +1,9 @@
+/* Test program for the Buzen language */
 program astalavista ;
 var x , y  : integer ;
 var z : boolean ;
 procedure manhasitall ( k : integer );
+        /* Returns the 'div' of a given integer number */
         begin
 		x := k div y
         end ;
@@ -21,4 +23,3 @@ begin
         while y > 10 do paredromo(z)
 end
 .
-

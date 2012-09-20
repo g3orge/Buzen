@@ -5,7 +5,7 @@ pp
 lex.*
 y.*
 output
-new_copy
+wo_comm
 parser
 *.exe
 *.lib

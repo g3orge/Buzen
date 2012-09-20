@@ -1,6 +1,0 @@
-program astalavista ;
-var x , y , z : integer ;
-begin if x  
-then x := y 
-else z := y 
-end .
